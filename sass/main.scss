@@ -288,6 +288,7 @@ body {
 				width: 80%;
 				border: none;
 				background-color: $green-color;
+				letter-spacing: 0.2rem;
 				cursor: pointer;
 				font-size: 1.8rem;
 				&::before {
@@ -310,7 +311,7 @@ body {
 	}
 	&__option {
 		margin: 1em 0;
-		box-shadow: 5px 5px 10px #2e2e2e2e;
+		box-shadow: 5px 5px 10px $light-dark;
 		background-color: $pure-white;
 		overflow: hidden;
 		&-img {
@@ -341,7 +342,7 @@ body {
 			width: 100%;
 			color: $pure-white;
 			font-size: 1.4rem;
-			letter-spacing: .2rem;
+			letter-spacing: 0.2rem;
 			background-color: $main-color;
 			border: none;
 			border-radius: 8px;
@@ -349,6 +350,98 @@ body {
 			&::before {
 				background-color: $secondary-color;
 			}
+		}
+	}
+}
+
+//====================
+// REVIEWS
+//====================
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
+	}
+}
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border-radius: 8px;
+		box-shadow: 3px 3px 10px $light-dark;
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+		img {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: $main-color;
+	}
+	&__box-text {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+		color: $dark;
+	}
+}
+
+//====================
+// CONTACT
+//====================
+
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+	.white-block-left {
+		background-color: $dark;
+	}
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+	&__form-input {
+		@include contactForm;
+	}
+	&__form-textarea {
+		@include contactForm;
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		min-height: 150px;
+		margin-bottom: 1em;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-color;
+		letter-spacing: 0.2rem;
+		cursor: pointer;
+		&::before {
+			background-color: $secondary-color;
 		}
 	}
 }
@@ -387,20 +480,20 @@ body {
 			&-img {
 				width: 50%;
 				height: auto;
-				&--right{
+				&--right {
 					order: 1;
 				}
 			}
-			&-info{
+			&-info {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 			}
-			&-heading{
+			&-heading {
 				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-			&-btn{
+			&-btn {
 				padding: 1em;
 			}
 		}
@@ -501,19 +594,24 @@ body {
 			max-width: 900px;
 		}
 	}
-	.offers{
-		background-image: $blue-gradient, url('../img/oferty_hg_1920.jpg');
-		&__option{
-			&-img{
+	.offers {
+		background-image: $blue-gradient, url("../img/oferty_hg_1920.jpg");
+		&__option {
+			&-img {
 				object-fit: cover;
 				height: 350px;
 			}
-			&-text{
+			&-text {
 				font-size: 1.5rem;
 			}
-			&-btn{
+			&-btn {
 				font-size: 1.6rem;
 			}
+		}
+	}
+	.contact {
+		&__form-btn {
+			font-size: 1.6rem;
 		}
 	}
 }

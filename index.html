@@ -13,6 +13,10 @@
 		<script
 			src="https://kit.fontawesome.com/49052c3078.js"
 			crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
@@ -243,8 +247,102 @@
 					</div>
 				</div>
 			</section>
+			<section
+				class="reviews section-padding section white-section"
+				id="reviews">
+				<h2 class="section-heading">Opinie</h2>
+				<div class="wrapper">
+					<div class="reviews__boxes">
+						<!--reviews one-->
+						<div class="reviews__box">
+							<div class="reviews__box-img">
+								<img src="/img/opinie1_640.jpg" alt="Anna Nowak" />
+							</div>
+							<div class="reviews__box-info">
+								<div class="reviews__box-quote">
+									<i class="fas fa-quote-right"> </i>
+								</div>
+								<p class="reviews__box-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Impedit, ab! Sapiente saepe beatae eligendi corrupti cumque
+									temporibus porro facere voluptatum.
+								</p>
+								<strong>Anna Nowak</strong>
+							</div>
+						</div>
+						<!--reviews two-->
+						<div class="reviews__box">
+							<div class="reviews__box-img">
+								<img src="/img/opinie2_640.jpg" alt="Jan Kowalski" />
+							</div>
+							<div class="reviews__box-info">
+								<div class="reviews__box-quote">
+									<i class="fas fa-quote-right"> </i>
+								</div>
+								<p class="reviews__box-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Impedit, ab! Sapiente saepe beatae eligendi corrupti cumque
+									temporibus porro facere voluptatum.
+								</p>
+								<strong>Jan Kowalski</strong>
+							</div>
+						</div>
+						<!--reviews three-->
+						<div class="reviews__box">
+							<div class="reviews__box-img">
+								<img src="/img/opinie3_640.jpg" alt="Maria Wiśniewska" />
+							</div>
+							<div class="reviews__box-info">
+								<div class="reviews__box-quote">
+									<i class="fas fa-quote-right"> </i>
+								</div>
+								<p class="reviews__box-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Impedit, ab! Sapiente saepe beatae eligendi corrupti cumque
+									temporibus porro facere voluptatum.
+								</p>
+								<strong>Maria Wiśniewska</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="contact section section-padding white-section"
+				id="contact">
+				<div class="white-block white-block-left"></div>
+				<div class="white-block white-block-right"></div>
+				<h2 class="section-heading">Kontakt</h2>
+				<div class="wrapper">
+					<form class="contact__form">
+						<div class="contact__form-top">
+
+							<label for="name" class="contact__form-label">imię i nazwisko:</label>
+							<input type="text" class="contact__form-input" id="name">
+
+							<label for="email" class="contact__form-label">adres e-mail:</label>
+							<input type="text" class="contact__form-input" id="email">
+						</div>
+						<label for="msg" class="contact__form-label">wiadomość:</label>
+						<textarea id="msg" cols="30" rows="10" class="contact__form-textarea"></textarea>
+
+						<button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+					</form>
+				</div>
+			</section>
 		</main>
 
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="./js/slick.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

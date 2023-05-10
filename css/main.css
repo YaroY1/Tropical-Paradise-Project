@@ -359,6 +359,7 @@ body {
   width: 80%;
   border: none;
   background-color: #00ffaa;
+  letter-spacing: 0.2rem;
   cursor: pointer;
   font-size: 1.8rem;
 }
@@ -418,6 +419,97 @@ body {
   cursor: pointer;
 }
 .offers__option-btn::before {
+  background-color: #164dcc;
+}
+
+@media (max-width: 767px) {
+  .reviews.section-padding {
+    padding: 6em 0;
+  }
+}
+.reviews__box {
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
+  transition: transform 0.3s;
+}
+.reviews__box:hover {
+  transform: scale(0.95);
+}
+.reviews__box-img {
+  position: absolute;
+  top: 8%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.reviews__box-img img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.reviews__box-quote {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  color: #1755e7;
+}
+.reviews__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+}
+
+.contact {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: #2e2e2e;
+}
+.contact__form, .contact__form-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 1em;
+}
+.contact__form-btn {
+  align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #1755e7;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+.contact__form-btn::before {
   background-color: #164dcc;
 }
 
@@ -562,6 +654,9 @@ body {
     font-size: 1.5rem;
   }
   .offers__option-btn {
+    font-size: 1.6rem;
+  }
+  .contact__form-btn {
     font-size: 1.6rem;
   }
 }
